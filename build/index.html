@@ -13,16 +13,18 @@
       <header class="main-header">
         <nav class="main-header__nav container">
           <ul class="main-header__list list">
-            <li class="main-header__item logotype">
-              <img class="logotype__img" src="img/svg/icon-logo.svg" alt="Логотип Smart Device">
-              <div class="logotype__text">
-                <b class="logotype__title">
-                  Smart Device
-                </b>
-                <span class="logotype__description">
-                  Умные технологии
-                </span>
-              </div>
+            <li class="main-header__item">
+              <a href="index.html" class="logotype">
+                <img class="logotype__img" src="img/svg/icon-logo.svg" alt="Логотип Smart Device">
+                <div class="logotype__text">
+                  <b class="logotype__title">
+                    Smart Device
+                  </b>
+                  <span class="logotype__description">
+                    Умные технологии
+                  </span>
+                </div>
+              </a>
             </li>
             <li class="main-header__item main-header__item--contacts">
               <a class="main-header__link" href="mailto:info@sd.ru">
@@ -61,8 +63,125 @@
           </div>
         </section> -->
       </main>
-      <footer>
-        <div class="container"></div>
+      <footer class="main-footer">
+        <nav class="main-footer__container container">
+          <div class="main-footer__links">
+            <a href="index.html" class="logotype logotype--footer">
+              <img class="logotype__img" src="img/svg/icon-logo.svg" alt="Логотип Smart Device">
+              <div class="logotype__text">
+                <b class="logotype__title">
+                  Smart Device
+                </b>
+                <span class="logotype__description">
+                  Умные технологии
+                </span>
+              </div>
+            </a>
+            <ul class="main-footer__socials socials list">
+              <li class="socials__item">
+                <a class="socials__link">
+                  <svg class="socials__icon" width="30" height="30" viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg">
+                    <use xlink:href="img/sprite/sprite.svg#socials-ok"/>
+                  </svg>
+                  <span class="visually-hidden">Одноклассники</span>
+                </a>
+              </li>
+              <li class="socials__item">
+                <a class="socials__link">
+                  <svg class="socials__icon" width="30" height="30" viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg">
+                    <use xlink:href="img/sprite/sprite.svg#socials-vk"/>
+                  </svg>
+                  <span class="visually-hidden">Вконтакте</span>
+                </a>
+              </li>
+              <li class="socials__item">
+                <a class="socials__link">
+                  <svg class="socials__icon" width="30" height="30" viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg">
+                    <use xlink:href="img/sprite/sprite.svg#socials-pint"/>
+                  </svg>
+                  <span class="visually-hidden">Pinterest</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="main-footer__nav">
+            <div class="main-footer__block site-pages site-pages--close site-pages--no-js">
+              <b class="site-pages__title main-footer__block-title">
+                Разделы сайта
+              </b>
+              <button type="button" class="main-footer__button site-pages__button">
+                <span class="visually-hidden">Открыть "Разделы сайта"</span>
+              </button>
+              <ul class="site-pages__list list">
+                <li class="site-pages__item">
+                  <a class="main-footer__text site-pages__link" href="#">
+                    О Компании
+                  </a>
+                </li>
+                <li class="site-pages__item">
+                  <a class="main-footer__text site-pages__link" href="#">
+                    Продукты
+                  </a>
+                </li>
+                <li class="site-pages__item">
+                  <a class="main-footer__text site-pages__link" href="#">
+                    Производство печатных плат
+                  </a>
+                </li>
+                <li class="site-pages__item">
+                  <a class="main-footer__text site-pages__link" href="#">
+                    Монтаж печатных плат
+                  </a>
+                </li>
+                <li class="site-pages__item">
+                  <a class="main-footer__text site-pages__link" href="#">
+                    Комплектующие
+                  </a>
+                </li>
+                <li class="site-pages__item">
+                  <a class="main-footer__text site-pages__link" href="#">
+                    Доставка
+                  </a>
+                </li>
+                <li class="site-pages__item">
+                  <a class="main-footer__text site-pages__link" href="#">
+                    Контакты
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="main-footer__block location location--close location--no-js">
+              <b class="location__title main-footer__block-title">
+                Наш офис
+              </b>
+              <button type="button" class="main-footer__button location__button">
+                <span class="visually-hidden">Открыть "Разделы сайта"</span>
+              </button>
+              <ul class="location__list list">
+                <li class="location__item">
+                  <span class="main-footer__text location__text location__text--address">
+                    г. Мытищи, Олимпийский проспект, д.10
+                  </span>
+                </li>
+                <li class="location__item">
+                  <a href="tel:+74955894050" class="location__link main-footer__text">
+                    +7 (495) 589-40-50
+                  </a>
+                </li>
+                <li class="location__item">
+                  <a href="tel:+79253895829" class="location__link main-footer__text">
+                    +7 (925) 389-58-29
+                  </a>
+                </li>
+                <li class="location__item">
+                  <a href="tel:+79253647813" class="location__link main-footer__text">
+                    +7 (925) 364-78-13
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
       </footer>
     </div>
 

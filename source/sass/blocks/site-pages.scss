@@ -1,0 +1,74 @@
+.site-pages {
+  position: relative;
+
+  @include vp-767 {
+    width: 100%;
+    border-bottom: 1px solid rgba(248, 253, 255, 0.7);
+  }
+}
+
+.site-pages--close .site-pages__button {
+  background-image: url("'../../img/svg/accordion-open.svg");
+}
+
+.site-pages--open .site-pages__button {
+  background-image: url("../../img/svg/accordion-close.svg");
+}
+
+.site-pages--no-js .site-pages__button {
+  display: none;
+}
+
+.site-pages--open .site-pages__title {
+  @include vp-767 {
+    margin-bottom: 15px;
+  }
+}
+
+.site-pages--no-js .site-pages__title {
+  @include vp-767 {
+    margin-bottom: 15px;
+  }
+}
+
+.site-pages--close .site-pages__title {
+  @include vp-767 {
+    margin-bottom: 5px;
+  }
+}
+
+.site-pages__item {
+  @include vp-767 {
+    display: flex;
+  }
+}
+
+.site-pages--close .site-pages__list {
+  @include vp-767 {
+    display: none;
+  }
+}
+
+.site-pages--open .site-pages__list,
+.site-pages--no-js .site-pages__list {
+  @include vp-767 {
+    display: grid;
+  }
+}
+
+.site-pages__list {
+  display: grid;
+  grid-template: repeat(4, auto) / repeat(2, 220px);
+  grid-auto-flow: column;
+  grid-column-gap: 30px;
+  grid-row-gap: 8px;
+
+  @include vp-1023 {
+    grid-template: auto / 220px;
+    grid-auto-flow: row;
+  }
+
+  @include vp-767 {
+    grid-row-gap: 10px;
+  }
+}
