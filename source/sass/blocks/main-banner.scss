@@ -1,0 +1,124 @@
+.main-banner {
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-image: url("../../img/main-bg.jpg");
+
+  @include vp-1023 {
+    background-position: -125px 0;
+  }
+
+  @include vp-767 {
+    background-position: -230px 0;
+  }
+}
+
+.main-banner__container {
+  padding: 305px 0 280px 125px;
+
+  @include vp-1439 {
+    padding: 305px 0 280px 125px;
+  }
+
+  @include vp-1023 {
+    padding-top: 187px;
+    padding-bottom: 205px;
+  }
+
+  @include vp-767 {
+    padding: 150px 25px 190px;
+  }
+}
+
+.main-banner__title {
+  max-width: 720px;
+  margin: 0;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-weight: 700;
+  font-size: 80px;
+  line-height: 94px;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  margin-bottom: 31px;
+
+  @include vp-1023 {
+    font-size: 64px;
+    line-height: 60px;
+    margin-bottom: 10px;
+  }
+
+  @include vp-767 {
+    font-size: 36px;
+    line-height: 43px;
+    margin-bottom: 6px;
+    max-width: 270px;
+  }
+}
+
+.main-banner__description {
+  max-width: 670px;
+  margin: 0;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 34px;
+  text-transform: lowercase;
+  margin-bottom: 46px;
+
+  @include vp-1023 {
+    margin-bottom: 52px;
+    line-height: 35px;
+  }
+
+  @include vp-767 {
+    font-size: 14px;
+    line-height: 22px;
+    max-width: 270px;
+    margin-bottom: 44px;
+  }
+}
+
+.main-banner__button {
+  min-height: 55px;
+  max-width: 415px;
+  border: none;
+  background-color: $color-deep-sky-blue;
+  color: $color-alice-blue;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  padding: 15px 25px;
+  border-radius: 3px;
+
+  @include vp-1023 {
+    margin-left: 45px;
+  }
+
+  @include vp-767 {
+    margin-left: 0;
+    max-width: none;
+    width: 100%;
+    font-size: 14px;
+    line-height: 16px;
+    min-height: 20px;
+    padding: 13px 25px 11px;
+  }
+}
+
+.main-banner__text--free {
+  display: none;
+
+  @include vp-767 {
+    display: inline;
+  }
+}
+
+.main-banner__text--get-free {
+  @include vp-767 {
+    display: none;
+  }
+}

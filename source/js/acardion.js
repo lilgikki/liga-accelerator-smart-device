@@ -26,5 +26,12 @@ const clickLocation = () => {
   }
 };
 
-sitePagesToggle.addEventListener('click', clickSitePages);
-locationToggle.addEventListener('click', clickLocation);
+const activateSitePages = () => {
+  sitePagesToggle.addEventListener('click', clickSitePages);
+};
+
+const activateLocation = () => {
+  locationToggle.addEventListener('click', clickLocation);
+};
+
+export {activateSitePages, activateLocation};

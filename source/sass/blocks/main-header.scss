@@ -6,34 +6,6 @@
   background: $black-pearl-to-transparent;
 }
 
-// .main-header__nav {
-//   padding: 30px 0 35px;
-//   padding-right: 60px;
-//   margin: 0 auto;
-//   max-width: 1220px;
-//   width: 100%;
-//   min-width: 1160px;
-
-//   @include vp-1439 {
-//     padding-top: 30px;
-//     padding-bottom: 35px;
-//   }
-
-//   @include vp-1279 {
-//     min-width: 1024px;
-//   }
-
-//   @include vp-1023 {
-//     min-width: 728px;
-//     padding: 20px 50px 25px;
-//   }
-
-//   @include vp-767 {
-//     min-width: 320px;
-//     padding: 10px 26px 20px;
-//   }
-// }
-
 .main-header__list {
   width: 100%;
   display: flex;
