@@ -16,7 +16,7 @@
 }
 
 .location--close .location__button {
-  background-image: url("'../../img/svg/accordion-open.svg");
+  background-image: url("../../img/svg/accordion-open.svg");
 }
 
 .location--open .location__button {
@@ -33,15 +33,15 @@
   }
 }
 
-.location--no-js .location__title {
-  @include vp-767 {
-    margin-bottom: 15px;
-  }
-}
-
 .location--close .location__title {
   @include vp-767 {
     margin-bottom: 0;
+  }
+}
+
+.location--no-js .location__title {
+  @include vp-767 {
+    margin-bottom: 15px;
   }
 }
 

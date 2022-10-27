@@ -8,7 +8,7 @@
 }
 
 .site-pages--close .site-pages__button {
-  background-image: url("'../../img/svg/accordion-open.svg");
+  background-image: url("../../img/svg/accordion-open.svg");
 }
 
 .site-pages--open .site-pages__button {
@@ -25,15 +25,15 @@
   }
 }
 
-.site-pages--no-js .site-pages__title {
-  @include vp-767 {
-    margin-bottom: 15px;
-  }
-}
-
 .site-pages--close .site-pages__title {
   @include vp-767 {
     margin-bottom: 5px;
+  }
+}
+
+.site-pages--no-js .site-pages__title {
+  @include vp-767 {
+    margin-bottom: 15px;
   }
 }
 
