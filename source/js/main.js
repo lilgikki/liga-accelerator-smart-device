@@ -1,6 +1,7 @@
 import {iosVhFix} from './utils/ios-vh-fix';
 import {initModals} from './modules/modals/init-modals';
 import {activateSitePages, activateLocation} from './acardion.js';
+import {clickAboutButton, changeParsTextContent, setParsTextContent} from './show-par.js';
 
 // ---------------------------------
 
@@ -16,6 +17,10 @@ window.addEventListener('DOMContentLoaded', () => {
 
   activateSitePages();
   activateLocation();
+
+  clickAboutButton();
+  setParsTextContent();
+  changeParsTextContent();
 
   // все скрипты должны быть в обработчике 'DOMContentLoaded', но не все в 'load'
   // в load следует добавить скрипты, не участвующие в работе первого экрана

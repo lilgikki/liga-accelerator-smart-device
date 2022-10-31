@@ -787,6 +787,7 @@ button,
 }
 
 .page {
+  background-color: #ffffff;
   font-family: "PT Mono", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -1060,6 +1061,74 @@ button,
   color: #f2f5f7;
 }
 
+.about {
+  width: 100%;
+  color: #041827;
+}
+
+.about__container {
+  padding: 0 0 120px 250px;
+  background-image: url("../../img/about-company.png");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.about__title {
+  margin: 0;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 51px;
+}
+
+.about__block {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+.about__block--hidden {
+  display: none;
+}
+
+.about__block--active,
+.about__block--no-js {
+  display: block;
+}
+
+.about__par {
+  display: block;
+  margin: 0;
+  padding: 10px 0 12px;
+  font-family: "PT Mono", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.about__button {
+  margin-top: 26px;
+  min-width: 180px;
+  max-width: 360px;
+  padding: 13px 12px 14px 11px;
+  color: #00b2ff;
+  background-color: transparent;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  border: 1px solid #00b2ff;
+  border-radius: 3px;
+}
+
 .main-footer {
   background-color: #041827;
   min-width: 320px;
@@ -1258,6 +1327,13 @@ button,
     padding-bottom: 120px;
   }
 
+  .about__container {
+    padding-top: 0;
+    padding-bottom: 120px;
+    padding-left: 282px;
+    background-position: 32px 0;
+  }
+
   .main-footer__container {
     padding: 50px 32px 55px;
   }
@@ -1340,7 +1416,7 @@ button,
 
   .benefits__container {
     padding-top: 80px;
-    padding-bottom: 80px;
+    padding-bottom: 77px;
   }
 
   .benefits__list {
@@ -1380,6 +1456,21 @@ button,
   .benefits__item-confident .benefits__type,
   .benefits__item-price .benefits__type {
     margin-bottom: 5px;
+  }
+
+  .about__container {
+    padding-top: 0;
+    padding-bottom: 80px;
+    padding-left: 225px;
+    background-position: 46px 3px;
+  }
+
+  .about__par {
+    padding-bottom: 10px;
+  }
+
+  .about__button {
+    margin-top: 6px;
   }
 
   .main-footer__container {
@@ -1534,7 +1625,7 @@ button,
   }
 
   .benefits__container {
-    padding: 50px 25px;
+    padding: 50px 25px 47px;
   }
 
   .benefits__list {
@@ -1585,6 +1676,30 @@ button,
   .benefits__item-time .benefits__description,
   .benefits__item-suppliers .benefits__description {
     min-height: 190px;
+  }
+
+  .about__container {
+    padding: 0 24px 80px;
+    background-image: none;
+  }
+
+  .about__title {
+    font-size: 28px;
+    line-height: 39px;
+  }
+
+  .about__par {
+    padding-top: 13px;
+    padding-bottom: 4px;
+    font-size: 14px;
+    line-height: 19px;
+  }
+
+  .about__button {
+    margin-top: 10px;
+    min-width: 160px;
+    max-width: 270px;
+    padding: 7px 14px 10px;
   }
 
   .main-footer__container {
