@@ -1,0 +1,184 @@
+.catalog {
+  width: 100%;
+  background-color: $color-black-pearl;
+}
+
+.catalog__container {
+  padding: 66px 0 140px;
+
+  @include vp-1439 {
+    padding-top: 66px;
+    padding-bottom: 140px;
+  }
+
+  @include vp-1023 {
+    padding-top: 55px;
+    padding-bottom: 75px;
+  }
+
+  @include vp-767 {
+    padding: 48px 25px 86px;
+  }
+}
+
+.catalog__title {
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 51px;
+  margin: 0;
+  letter-spacing: 0.0007em;
+  margin-bottom: 53px;
+
+  @include vp-1023 {
+    margin-bottom: 38px;
+  }
+
+  @include vp-767 {
+    margin-bottom: 28px;
+    font-size: 28px;
+    line-height: 39px;
+    display: none;
+  }
+}
+
+.catalog__title--mobile {
+  display: none;
+
+  @include vp-767 {
+    display: block;
+    width: 260px;
+  }
+}
+
+.catalog__list {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.catalog__item {
+  display: block;
+  width: calc((100% - 170px)/3);
+  height: 650px;
+  background-color: $color-deep-sky-blue;
+  background-position: center;
+  background-size: cover;
+
+  @include vp-1023 {
+    width: 100%;
+    height: 250px;
+    margin-bottom: 30px;
+  }
+}
+
+.catalog__item:last-of-type {
+  @include vp-1023 {
+    margin-bottom: 0;
+  }
+}
+
+.catalog__item--prod {
+  background-image: url("../../img/desktop-catalog-bg-1.jpg");
+
+  @include vp-1023 {
+    background-image: url("../../img/tablet-catalog-bg-1.jpg");
+  }
+
+  @include vp-767 {
+    background-image: url("../../img/mobile-catalog-bg-1.jpg");
+  }
+}
+
+.catalog__item--mount {
+  background-image: url("../../img/desktop-catalog-bg-2.jpg");
+
+  @include vp-1023 {
+    background-image: url("../../img/tablet-catalog-bg-2.jpg");
+  }
+
+  @include vp-767 {
+    background-image: url("../../img/mobile-catalog-bg-2.jpg");
+  }
+}
+
+.catalog__item--access {
+  background-image: url("../../img/desktop-catalog-bg-3.jpg");
+
+  @include vp-1023 {
+    background-image: url("../../img/tablet-catalog-bg-3.jpg");
+  }
+
+  @include vp-767 {
+    background-image: url("../../img/mobile-catalog-bg-3.jpg");
+  }
+}
+
+.catalog__link {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding-top: 48px;
+  padding-left: 40px;
+
+  @include vp-1023 {
+    padding-top: 38px;
+    padding-left: 45px;
+  }
+
+  @include vp-767 {
+    padding-top: 26px;
+    padding-left: 30px;
+  }
+}
+
+.catalog__link::after {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  content: '';
+  width: 62px;
+  height: 60px;
+  border-radius: 3px 0px 0px 0px;
+  background-color: $color-deep-sky-blue;
+  background-repeat: no-repeat;
+  background-position: 30px 26px;
+  background-image: url("../../img/svg/small-arrow-right.svg");
+
+  @include vp-1023 {
+    width: 60px;
+  }
+
+  @include vp-767 {
+    background-position: 20px 17px;
+    background-size: 3px;
+    width: 40px;
+    height: 40px;
+  }
+}
+
+.catalog__page {
+  width: 180px;
+  margin: 0;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  color: #FFFFFF;
+
+  @include vp-767 {
+    font-size: 18px;
+  }
+}
+
+.catalog__item--mount .catalog__page {
+  @include vp-1023 {
+    width: 140px;
+  }
+
+  @include vp-767 {
+    width: 130px;
+  }
+}
