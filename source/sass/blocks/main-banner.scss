@@ -5,6 +5,10 @@
   background-size: cover;
   background-image: url("../../img/main-bg.jpg");
 
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../../img/main-bg@2.jpg");
+  }
+
   @include vp-1023 {
     background-position: -125px 0;
   }
@@ -79,6 +83,7 @@
 }
 
 .main-banner__button {
+  display: block;
   min-height: 55px;
   max-width: 415px;
   border: none;

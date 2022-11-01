@@ -1,0 +1,157 @@
+.form__title {
+  display: inline-block;
+  width: 100%;
+  margin: 0;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 51px;
+  margin-bottom: 12px;
+
+  @include vp-1023 {
+    margin-bottom: 7px;
+  }
+
+  @include vp-767 {
+    font-size: 30px;
+    line-height: 42px;
+  }
+}
+
+.form__description {
+  width: 100%;
+  display: inline-block;
+  margin-left: 5px;
+  margin-bottom: 35px;
+
+  @include vp-1023 {
+    margin-left: 0;
+    margin-bottom: 25px;
+  }
+
+  @include vp-767 {
+    font-size: 14px;
+    line-height: 19px;
+    margin-bottom: 33px;
+  }
+}
+
+.form__input {
+  width: 100%;
+  border: none;
+  background: rgba(4, 20, 39, 0.15);
+  border-radius: 3px;
+  color: $color-default-white;
+  padding: 15px 15px 16px;
+}
+
+.form__input::placeholder {
+  color: $color-default-white;
+  font-family: "PT Mono", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.form__input--quest {
+  width: 100%;
+  height: 100%;
+  padding-top: 25px;
+  padding-bottom: 25px;
+
+  @include vp-1023 {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+
+  @include vp-767 {
+    padding-top: 23px;
+    padding-bottom: 23px;
+  }
+}
+
+.form__submit {
+  border: none;
+  color: $color-default-white;
+  padding: 15px 25px 10px;
+  width: 45%;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  background: $color-black-pearl;
+  border-radius: 3px;
+  margin-left: 5px;
+
+  @include vp-1023 {
+    padding-top: 17px;
+    margin-left: 0;
+    width: 265px;
+  }
+
+  @include vp-767 {
+    width: 100%;
+    padding-top: 15px;
+    padding-bottom: 11px;
+  }
+}
+
+.form__checkbox {
+  margin-top: 15px;
+  position: relative;
+  padding-left: 26px;
+  width: 45.5%;
+  opacity: 0.8;
+  font-family: "PT Mono", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 15px;
+
+  @include vp-1023 {
+    margin-left: 0;
+    width: 320px;
+    margin-top: 12px;
+  }
+
+  @include vp-767 {
+    width: 100%;
+    margin-left: 4px;
+    margin-top: 26px;
+  }
+}
+
+.form__checkbox-input {
+  width: 0;
+  height: 0;
+  position: absolute;
+  opacity: 0;
+}
+
+.form__checkbox::before {
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 5px;
+  content: "";
+  cursor: pointer;
+  width: 15px;
+  height: 15px;
+  border: 1px solid $color-default-white;
+  border-radius: 2px;
+}
+
+.form__checkbox-input:checked ~ .form__checkbox::after {
+  display: block;
+  width: 8px;
+  height: 5px;
+  content: "";
+  position: absolute;
+  left: 3px;
+  top: 10px;
+  background-image: url("../../img/svg/icon-checked.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}

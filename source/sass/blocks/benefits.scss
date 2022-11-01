@@ -3,11 +3,11 @@
 }
 
 .benefits__container {
-  padding: 122px 0 120px;
+  padding: 122px 0 122px;
 
   @include vp-1439 {
     padding-top: 122px;
-    padding-bottom: 120px;
+    padding-bottom: 122px;
   }
 
   @include vp-1023 {
@@ -23,7 +23,8 @@
 .benefits__list {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-gap: 31px;
+  grid-column-gap: 31px;
+  grid-row-gap: 29px;
 
   @include vp-1023 {
     grid-column-gap: 29px;
