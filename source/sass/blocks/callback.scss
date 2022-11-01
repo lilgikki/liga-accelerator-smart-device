@@ -1,0 +1,72 @@
+.callback__container {
+  background-color: $color-deep-sky-blue;
+  width: 500px;
+  padding-top: 38px;
+}
+
+.callback__wrapper {
+  align-items: flex-start;
+  padding-top: 146px;
+  padding-left: 25px;
+}
+
+.callback__button {
+  top: 17px;
+  right: 16px;
+}
+
+.callback__title {
+  font-size: 30px;
+  line-height: 42px;
+  margin-bottom: 3px;
+}
+
+.callback__description {
+  margin-left: 0;
+  margin-bottom: 37px;
+}
+
+.callback__inputs-wrapper {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.callback__label {
+  width: 100%;
+  margin-bottom: 21px;
+}
+
+.callback__label--quest {
+  margin-bottom: 17px;
+}
+
+.callback__input {
+  padding-bottom: 17px;
+}
+
+.callback__input--quest {
+  height: 155px;
+  padding-top: 22px;
+  padding-bottom: 22px;
+}
+
+.callback__submit {
+  width: 100%;
+  margin-left: 0;
+  margin-bottom: 17px;
+}
+
+.callback__checkbox {
+  margin-left: 7px;
+}
+
+.callback__checkbox::before {
+  left: 1px;
+  top: 0;
+}
+
+.callback__checkbox-input:checked ~ .callback__checkbox::after {
+  left: 4px;
+  top: 5px;
+}

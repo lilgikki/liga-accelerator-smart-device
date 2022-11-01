@@ -82,36 +82,72 @@
 .catalog__item--prod {
   background-image: url("../../img/desktop-catalog-bg-1.jpg");
 
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../../img/desktop-catalog-bg-1@2.jpg");
+  }
+
   @include vp-1023 {
     background-image: url("../../img/tablet-catalog-bg-1.jpg");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../../img/tablet-catalog-bg-1@2.jpg");
+    }
   }
 
   @include vp-767 {
     background-image: url("../../img/mobile-catalog-bg-1.jpg");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../../img/mobile-catalog-bg-1@2.jpg");
+    }
   }
 }
 
 .catalog__item--mount {
   background-image: url("../../img/desktop-catalog-bg-2.jpg");
 
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../../img/desktop-catalog-bg-2@2.jpg");
+  }
+
   @include vp-1023 {
     background-image: url("../../img/tablet-catalog-bg-2.jpg");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../../img/tablet-catalog-bg-2@2.jpg");
+    }
   }
 
   @include vp-767 {
     background-image: url("../../img/mobile-catalog-bg-2.jpg");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../../img/mobile-catalog-bg-2@2.jpg");
+    }
   }
 }
 
 .catalog__item--access {
   background-image: url("../../img/desktop-catalog-bg-3.jpg");
 
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../../img/desktop-catalog-bg-3@2.jpg");
+  }
+
   @include vp-1023 {
     background-image: url("../../img/tablet-catalog-bg-3.jpg");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../../img/tablet-catalog-bg-3@2.jpg");
+    }
   }
 
   @include vp-767 {
     background-image: url("../../img/mobile-catalog-bg-3.jpg");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../../img/mobile-catalog-bg-3@2.jpg");
+    }
   }
 }
 
