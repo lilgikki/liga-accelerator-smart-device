@@ -1,6 +1,7 @@
 .catalog {
   width: 100%;
   background-color: $color-black-pearl;
+  color: $color-default-white;
 }
 
 .catalog__container {
@@ -27,7 +28,6 @@
   font-size: 36px;
   line-height: 51px;
   margin: 0;
-  letter-spacing: 0.0007em;
   margin-bottom: 53px;
 
   @include vp-1023 {
@@ -60,7 +60,7 @@
 
 .catalog__item {
   display: block;
-  width: calc((100% - 170px)/3);
+  width: calc((100% - 170px) / 3);
   height: 650px;
   background-color: $color-deep-sky-blue;
   background-position: center;
@@ -138,10 +138,10 @@
   position: absolute;
   bottom: 0;
   right: 0;
-  content: '';
+  content: "";
   width: 62px;
   height: 60px;
-  border-radius: 3px 0px 0px 0px;
+  border-radius: 3px 0 0 0;
   background-color: $color-deep-sky-blue;
   background-repeat: no-repeat;
   background-position: 30px 26px;
@@ -166,7 +166,7 @@
   font-weight: 400;
   font-size: 20px;
   line-height: 30px;
-  color: #FFFFFF;
+  color: $color-default-white;
 
   @include vp-767 {
     font-size: 18px;

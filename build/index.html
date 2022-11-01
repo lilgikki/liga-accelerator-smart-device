@@ -173,6 +173,31 @@
             </ul>
           </div>
         </section>
+        <section class="feedback">
+          <h2 class="visually-hidden">Форма обратногй связи</h2>
+          <div class="feedback__container container">
+            <form class="feedback__form" action="https://echo.htmlacademy.ru/" method="get">
+              <h3 class="feedback__title">Остались вопросы? Задайте их нам!</h3>
+              <span class="feedback__description">Мы проконсультируем Вас бесплатно</span>
+              <div class="feedback__inputs-wrapper">
+                <label class="feedback__label" for="name">
+                  <input class="feedback__input feedback__input--name" type="text" id="name" placeholder="Имя" name="name" required>
+                </label>
+                <label class="feedback__label" for="tel">
+                  <input class="feedback__input feedback__input--tel" type="tel" id="tel" placeholder="Телефон" name="telephone" required>
+                </label>
+                <label class="feedback__label feedback__label--quest" for="quest">
+                  <textarea class="feedback__input feedback__input--quest" id="quest" placeholder="Ваш вопрос" name="question" required></textarea>
+                </label>
+              </div>
+              <button class="feedback__submit" type="submit">Задать вопрос</button>
+              <input class="feedback__checkbox-input" type="checkbox" id="check" name="checkbox">
+              <label class="feeback__checkbox" for="check">
+                Я согласен на обработку  персональных данных
+              </label>
+            </form>
+          </div>
+        </section>
         <!-- <section class="intro">
           <div class="container">
             <h1>Тестовая страница.</h1>
