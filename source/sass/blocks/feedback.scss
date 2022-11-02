@@ -1,7 +1,8 @@
 .feedback {
   width: 100%;
+  font-family: "PT Mono", "Times New Roman", serif;
   background-color: $color-deep-sky-blue;
-  background-image: url("../../img/svg/bg-form.svg");
+  background-image: url("../img/svg/bg-form.svg");
   background-repeat: no-repeat;
   background-size: cover;
   color: $color-default-white;
@@ -12,14 +13,14 @@
 }
 
 .feedback__container {
-  background-image: url("../../img/paper-airplane.png");
+  background-image: url("../img/paper-airplane.png");
   background-size: 510px 285px;
   background-repeat: no-repeat;
   background-position: 0 246px;
   padding: 165px 0 250px 0;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    background-image: url("../../img/paper-airplane@2.png");
+    background-image: url("../img/paper-airplane@2.png");
   }
 
   @include vp-1439 {
@@ -27,6 +28,7 @@
   }
 
   @include vp-1023 {
+    padding: 45px 50px 124px;
     padding-top: 45px;
     padding-bottom: 124px;
     background-image: none;
@@ -37,7 +39,7 @@
   }
 }
 
-.feedback__form {
+.feedback form {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -57,11 +59,11 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin-bottom: 16px;
+  margin-bottom: 34px;
 
   @include vp-1023 {
     margin-left: 0;
-    margin-bottom: 15px;
+    margin-bottom: 35px;
   }
 
   @include vp-767 {
@@ -69,20 +71,11 @@
   }
 }
 
-.feedback__label {
+.feedback__inputs-wrapper label {
   width: 47.5%;
   margin-bottom: 20px;
 
   @include vp-767 {
     width: 100%;
-  }
-}
-
-.feedback__label--quest {
-  width: 100%;
-  height: 155px;
-
-  @include vp-767 {
-    height: 180px;
   }
 }

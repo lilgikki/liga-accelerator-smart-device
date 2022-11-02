@@ -1,4 +1,5 @@
 .logotype {
+  transition: $trans-default;
   display: flex;
   width: 215px;
   align-items: center;
@@ -8,66 +9,19 @@
   text-decoration: none;
 
   @include vp-767 {
-    width: fit-content;
+    margin-top: 5px;
+    width: 35px;
+  }
+
+  @include hover-focus {
+    opacity: 0.8;
   }
 }
 
 .logotype--footer {
   @include vp-767 {
+    margin-top: 0;
     width: 215px;
     margin-right: 7px;
   }
-}
-
-.logotype__img {
-  width: 55px;
-  height: 55px;
-
-  @include vp-767 {
-    margin-top: 5px;
-    width: 35px;
-    height: 35px;
-  }
-}
-
-.logotype--footer .logotype__img {
-  @include vp-767 {
-    margin-top: 0;
-    width: 55px;
-    height: 55px;
-  }
-}
-
-.logotype__text {
-  display: flex;
-  flex-wrap: wrap;
-  width: 145px;
-
-  @include vp-767 {
-    display: none;
-  }
-}
-
-.logotype--footer .logotype__text {
-  @include vp-767 {
-    display: flex;
-  }
-}
-
-.logotype__title {
-  font-family: "Roboto Condensed", "Arial", sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 25px;
-  line-height: 29px;
-}
-
-.logotype__description {
-  margin-top: 3px;
-  font-family: "Roboto", "Arial", sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 14px;
-  color: rgba(255, 255, 255, 0.7);
 }

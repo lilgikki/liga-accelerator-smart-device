@@ -46,11 +46,11 @@
 }
 
 .main-footer__block {
-  margin-top: 5px;
+  margin-top: 3px;
 
   @include vp-767 {
     margin-top: 0;
-    padding: 19px 25px 16px 25px;
+    padding: 17px 25px 16px 25px;
   }
 }
 
@@ -74,6 +74,7 @@
 
 .main-footer__block-title {
   display: inline-block;
+  vertical-align: baseline;
   margin-bottom: 20px;
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-weight: 400;
@@ -85,7 +86,7 @@
 }
 
 .main-footer__text {
-  font-family: "PT Mono", "Arial", sans-serif;
+  font-family: "PT Mono", "Times New Roman", serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 22px;

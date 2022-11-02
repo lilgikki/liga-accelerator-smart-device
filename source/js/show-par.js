@@ -6,21 +6,25 @@ const FOURTH_PAR_TEXT = 'Smart Device - это команда профессио
 const aboutBlock = document.querySelector('.about__block--hidden');
 const aboutButton = document.querySelector('.about__button');
 
-const secondPar = document.querySelector('.about__par--2');
-const fourthPar = document.querySelector('.about__par--4');
+const secondPar = document.getElementById('par-2');
+const fourthPar = document.getElementById('par-4');
 
 let screenWidth;
 
-aboutBlock.classList.remove('about__block--no-js');
+if (aboutBlock) {
+  aboutBlock.classList.remove('about__block--no-js');
+}
 
 const setParsTextContent = () => {
-  screenWidth = document.documentElement.clientWidth;
-  if (screenWidth <= MAX_MOBILE_WIDTH) {
-    secondPar.textContent = SECOND_PAR_TEXT;
-    fourthPar.textContent = THIRD_PAR_TEXT + ' ' + FOURTH_PAR_TEXT;
-  } else {
-    secondPar.textContent = SECOND_PAR_TEXT + THIRD_PAR_TEXT;
-    fourthPar.textContent = FOURTH_PAR_TEXT;
+  if (aboutBlock) {
+    screenWidth = document.documentElement.clientWidth;
+    if (screenWidth <= MAX_MOBILE_WIDTH) {
+      secondPar.textContent = SECOND_PAR_TEXT;
+      fourthPar.textContent = THIRD_PAR_TEXT + ' ' + FOURTH_PAR_TEXT;
+    } else {
+      secondPar.textContent = SECOND_PAR_TEXT + THIRD_PAR_TEXT;
+      fourthPar.textContent = FOURTH_PAR_TEXT;
+    }
   }
 };
 
@@ -37,19 +41,23 @@ const closeBlock = () => {
 };
 
 const clickAboutButton = () => {
-  aboutButton.addEventListener('click', () => {
-    if (aboutBlock.classList.contains('about__block--hidden')) {
-      openBlock();
-    } else {
-      closeBlock();
-    }
-  });
+  if (aboutBlock) {
+    aboutButton.addEventListener('click', () => {
+      if (aboutBlock.classList.contains('about__block--hidden')) {
+        openBlock();
+      } else {
+        closeBlock();
+      }
+    });
+  }
 };
 
 const changeParsTextContent = () => {
-  window.addEventListener('resize', () => {
-    setParsTextContent();
-  }, false);
+  if (aboutBlock) {
+    window.addEventListener('resize', () => {
+      setParsTextContent();
+    }, false);
+  }
 };
 
 export {clickAboutButton, changeParsTextContent, setParsTextContent};
