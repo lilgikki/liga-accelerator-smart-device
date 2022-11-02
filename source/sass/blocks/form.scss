@@ -1,6 +1,6 @@
 .form form {
   color: $color-alice-blue;
-  font-family: "PT Mono", "Times New Roman", serif;
+  font-family: "PT Mono", "Courier New", monospace;
 }
 
 .form__title {
@@ -55,7 +55,7 @@
 .form__inputs-wrapper input::placeholder,
 .form__input--quest textarea::placeholder {
   color: $color-default-white;
-  font-family: "PT Mono", "Times New Roman", serif;
+  font-family: "PT Mono", "Courier New", monospace;
   font-weight: 400;
   font-size: 16px;
   line-height: 22px;
@@ -126,7 +126,7 @@
   width: 45.5%;
   margin-top: 15px;
   padding-left: 26px;
-  font-family: "PT Mono", "Times New Roman", serif;
+  font-family: "PT Mono", "Courier New", monospace;
   font-weight: 400;
   font-size: 14px;
   line-height: 15px;
