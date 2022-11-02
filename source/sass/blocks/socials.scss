@@ -18,6 +18,11 @@
 }
 
 .socials__link {
+  transition: $trans-default;
   display: flex;
   padding: 5px;
+
+  @include hover-focus {
+    opacity: 0.8;
+  }
 }

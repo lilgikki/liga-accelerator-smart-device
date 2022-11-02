@@ -1,10 +1,14 @@
-const sitePages = document.querySelector('.site-pages');
-const sitePagesToggle = document.querySelector('.site-pages__button');
-const location = document.querySelector('.location');
-const locationToggle = document.querySelector('.location__button');
+const sitePages = document.getElementById('site-pages');
+const sitePagesToggle = document.getElementById('site-pages-button');
+const location = document.getElementById('location');
+const locationToggle = document.getElementById('location-button');
 
-sitePages.classList.remove('site-pages--no-js');
-location.classList.remove('location--no-js');
+if (sitePages) {
+  sitePages.classList.remove('site-pages--no-js');
+}
+if (location) {
+  location.classList.remove('location--no-js');
+}
 
 const openSitePages = () => {
   sitePages.classList.remove('site-pages--close');
@@ -45,11 +49,15 @@ const clickLocation = () => {
 };
 
 const activateSitePages = () => {
-  sitePagesToggle.addEventListener('click', clickSitePages);
+  if (sitePages) {
+    sitePagesToggle.addEventListener('click', clickSitePages);
+  }
 };
 
 const activateLocation = () => {
-  locationToggle.addEventListener('click', clickLocation);
+  if (location) {
+    locationToggle.addEventListener('click', clickLocation);
+  }
 };
 
 export {activateSitePages, activateLocation};

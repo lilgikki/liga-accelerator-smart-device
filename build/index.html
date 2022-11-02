@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="page" lang="ru">
+<html lang="ru">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -8,22 +8,17 @@
     <title>Smart Device</title>
     <link rel="stylesheet" href="css/style.min.css">
   </head>
-  <body class="page__body">
+  <body>
     <div class="wrapper">
       <header class="main-header">
         <nav class="main-header__nav container">
           <ul class="main-header__list list">
             <li class="main-header__item">
               <a href="index.html" class="logotype">
-                <img class="logotype__img" src="img/svg/icon-logo.svg" alt="Логотип Smart Device">
-                <div class="logotype__text">
-                  <b class="logotype__title">
-                    Smart Device
-                  </b>
-                  <span class="logotype__description">
-                    Умные технологии
-                  </span>
-                </div>
+                <picture>
+                  <source media="(min-width: 768px)" srcset="img/svg/desktop-icon-logo.svg">
+                  <img class="logotype__img" src="img/svg/mobile-icon-logo.svg" alt="Логотип Smart Device">
+                </picture>
               </a>
             </li>
             <li class="main-header__item main-header__item--contacts">
@@ -80,10 +75,10 @@
                 <svg class="benefits__icon" width="35" height="35" viewBox="0 0 35 35">
                   <use xlink:href="img/sprite/sprite.svg#benefits-time"></use>
                 </svg>
-                <h3 class="benefits__type">
+                <h3>
                   Оперативные сроки
                 </h3>
-                <p class="benefits__description">
+                <p>
                   Усовершенствованная логистическая система позволяет нам просчитывать стоимость, производить и доставлять заказы плат и комплектующих в самые короткие сроки
                 </p>
               </li>
@@ -91,10 +86,10 @@
                 <svg class="benefits__icon" width="35" height="35" viewBox="0 0 35 35">
                   <use xlink:href="img/sprite/sprite.svg#benefits-suppliers"></use>
                 </svg>
-                <h3 class="benefits__type">
+                <h3>
                   Крупные поставщики
                 </h3>
-                <p class="benefits__description">
+                <p>
                   Нашими поставщиками являются такие крупные мировые компании как: OSRAM, CREE, HOLGLITRONIC, REFOND. Сотрудничество с такими компаниями обеспечивает хорошее качество нашей продукции.
                 </p>
               </li>
@@ -102,10 +97,10 @@
                 <svg class="benefits__icon" width="35" height="35" viewBox="0 0 35 35">
                   <use xlink:href="img/sprite/sprite.svg#benefits-confident"></use>
                 </svg>
-                <h3 class="benefits__type">
+                <h3>
                   Полная конфиденциальность
                 </h3>
-                <p class="benefits__description">
+                <p>
                   По желанию клиента&emsp;мы обеспечиваем полную конфиденциальность.
                 </p>
               </li>
@@ -113,10 +108,10 @@
                 <svg class="benefits__icon" width="35" height="35" viewBox="0 0 35 35">
                   <use xlink:href="img/sprite/sprite.svg#benefits-price"></use>
                 </svg>
-                <h3 class="benefits__type">
+                <h3>
                   Персонализация стоимости
                 </h3>
-                <p class="benefits__description">
+                <p>
                   Мы&emsp;подбираем определенную фабрику, поставщиков, вид доставки, чтобы установить ту цену, которая Вас устраивает.
                 </p>
               </li>
@@ -129,18 +124,18 @@
               О компании
             </h2>
             <div class="about__block">
-              <p class="about__par">
+              <p>
                 Мы поставляем электронные комплектующие, производим печатные платы и предоставляем мировые технологии с 1997 года. Выполняем срочные заказы и пилотные образцы до 10 дней.
               </p>
-              <p class="about__par about__par--2">
+              <p id="par-2">
                 Наши поставщики - мировые производители электронных компонентов: OSRAM, CREE, HOLGLITRONIC, REFOND. <br>Печатные платы и комплектующие Service Devices применяются на предприятиях Российских Железных Дорог (РЖД), РоссАвтоПрома (ВАЗ, АвтоГАЗ), МинАтома, СпецМедТехники. Среди наших клиентов крупнейшие Производители светотехники России.
               </p>
             </div>
             <div class="about__block about__block--hidden about__block--no-js">
-              <p class="about__par about__par--4">
+              <p id="par-4">
                 Smart Device - это команда профессионалов. Через нас прошло более 1 000 000 клиентов, 70% из которых продолжают сотрудничество по сей день. На данный момент насчитывается более 14 офисов по всей стране и 20 городов присутствия.
               </p>
-              <p class="about__par">
+              <p>
                 Мы стремимся к постоянному развитию и повышению уровня качества продукции, производимой внутри компании. Использование инновационных технологий помогает экономить деньги и время наших клиентов
               </p>
             </div>
@@ -175,52 +170,39 @@
         </section>
         <section class="feedback">
           <h2 class="visually-hidden">Форма обратногй связи</h2>
-          <div class="feedback__container container">
-            <form class="feedback__form form" action="https://echo.htmlacademy.ru/" method="get">
+          <div class="feedback__container container form">
+            <form action="https://echo.htmlacademy.ru/" method="get">
               <h3 class="form__title">Остались вопросы? Задайте их нам!</h3>
               <span class="form__description">Мы проконсультируем Вас бесплатно</span>
-              <div class="feedback__inputs-wrapper">
-                <label class="feedback__label" for="name">
-                  <input class="form__input" type="text" id="name" placeholder="Имя" name="name" required>
+              <div class="feedback__inputs-wrapper form__inputs-wrapper">
+                <label for="name">
+                  <input type="text" id="name" placeholder="Имя" name="name" required>
                 </label>
-                <label class="feedback__label" for="tel">
-                  <input class="form__input" type="tel" id="tel" placeholder="Телефон" name="telephone" required>
+                <label for="tel">
+                  <input type="tel" id="tel" placeholder="Телефон" name="telephone" required>
                 </label>
-                <label class="feedback__label feedback__label--quest" for="quest">
-                  <textarea class="form__input form__input--quest" id="quest" placeholder="Ваш вопрос" name="question" required></textarea>
+                <div class="form__input--quest">
+                  <label for="quest">
+                    <textarea id="quest" placeholder="Ваш вопрос" name="question" required></textarea>
+                  </label>
+                </div>
+              </div>
+              <button class="form__submit btn" type="submit">Задать вопрос</button>
+              <div class="form__checkbox-container">
+                <input type="checkbox" id="check" name="checkbox" required>
+                <label for="check">
+                  Я согласен на обработку  персональных данных
                 </label>
               </div>
-              <button class="form__submit" type="submit">Задать вопрос</button>
-              <input class="form__checkbox-input" type="checkbox" id="check" name="checkbox" required>
-              <label class="form__checkbox" for="check">
-                Я согласен на обработку  персональных данных
-              </label>
             </form>
           </div>
         </section>
-        <!-- <section class="intro">
-          <div class="container">
-            <h1>Тестовая страница.</h1>
-            <p>На данной странице показан пример модальных окон.</p>
-            <p>Перед началом разработки не забудьте удалить всё содержимое &#8249;main&#8250;&#8249;&#8260;main&#8250;.</p>
-            <p><a class="btn" href="#" data-open-modal="feedback">modal--feedback link</a></p>
-            <p><a class="btn" href="#" data-open-modal="success">modal--success link</a></p>
-          </div>
-        </section> -->
       </main>
       <footer class="main-footer">
         <nav class="main-footer__container container">
           <div class="main-footer__links">
             <a href="index.html" class="logotype logotype--footer">
-              <img class="logotype__img" src="img/svg/icon-logo.svg" alt="Логотип Smart Device">
-              <div class="logotype__text">
-                <b class="logotype__title">
-                  Smart Device
-                </b>
-                <span class="logotype__description">
-                  Умные технологии
-                </span>
-              </div>
+              <img width="215" height="55" class="logotype__img" src="img/svg/desktop-icon-logo.svg" alt="Логотип Smart Device">
             </a>
             <ul class="main-footer__socials socials list">
               <li class="socials__item">
@@ -250,11 +232,11 @@
             </ul>
           </div>
           <div class="main-footer__nav">
-            <div class="main-footer__block site-pages site-pages--close site-pages--no-js">
+            <div class="main-footer__block site-pages site-pages--close site-pages--no-js" id="site-pages">
               <b class="site-pages__title main-footer__block-title">
                 Разделы сайта
               </b>
-              <button type="button" class="main-footer__button site-pages__button">
+              <button type="button" class="main-footer__button site-pages__button" id="site-pages-button">
                 <span class="visually-hidden">Открыть "Разделы сайта"</span>
               </button>
               <ul class="site-pages__list list">
@@ -295,11 +277,11 @@
                 </li>
               </ul>
             </div>
-            <div class="main-footer__block location location--close location--no-js">
+            <div class="main-footer__block location location--close location--no-js" id="location">
               <b class="location__title main-footer__block-title">
                 Наш офис
               </b>
-              <button type="button" class="main-footer__button location__button">
+              <button type="button" class="main-footer__button location__button" id="location-button">
                 <span class="visually-hidden">Открыть "Разделы сайта"</span>
               </button>
               <ul class="location__list list">
@@ -334,50 +316,39 @@
     <div class="callback modal modal--preload" data-modal="feedback">
       <div class="callback__wrapper modal__wrapper">
         <div class="modal__overlay" data-close-modal></div>
-        <div class="callback__container modal__content">
+        <div class="callback__container modal__content form">
           <button class="callback__button modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>
             <svg width="20" height="20">
               <use xlink:href="img/sprite/sprite.svg#icon-close"></use>
             </svg>
           </button>
-          <form class="callback__form form" action="https://echo.htmlacademy.ru/" method="get">
+          <form action="https://echo.htmlacademy.ru/" method="get">
             <span class="callback__title form__title">Закажите звонок</span>
             <span class="callback__description form__description">Оставьте контакты, мы проконсультируем<br>вас бесплатно в удобное время</span>
-            <div class="callback__inputs-wrapper">
-              <label class="callback__label" for="name-modal">
-                <input class="callback__input form__input" type="text" id="name-modal" placeholder="Имя" name="name" required>
+            <div class="callback__inputs-wrapper form__inputs-wrapper">
+              <label for="name-modal">
+                <input type="text" id="name-modal" placeholder="Имя" name="name" required>
               </label>
-              <label class="callback__label" for="tel-modal">
-                <input class="callback__input form__input" type="tel" id="tel-modal" placeholder="Телефон" name="telephone" required>
+              <label for="tel-modal">
+                <input type="tel" id="tel-modal" placeholder="Телефон" name="telephone" required>
               </label>
-              <label class="callback__label callback__label--quest" for="quest-modal">
-                <textarea class="callback__input callback__input--quest form__input form__input--quest" id="quest-modal" placeholder="Ваш вопрос" name="question" required></textarea>
+              <div class="form__input--quest">
+                <label for="quest-modal">
+                  <textarea id="quest-modal" placeholder="Ваш вопрос" name="question" required></textarea>
+                </label>
+              </div>
+            </div>
+            <button class="callback__submit form__submit btn" type="submit">Отправить</button>
+            <div class="callback__checkbox-container form__checkbox-container">
+              <input type="checkbox" id="check-modal" name="checkbox" required>
+              <label for="check-modal">
+                Я согласен на обработку  персональных данных
               </label>
             </div>
-            <button class="callback__submit form__submit" type="submit">Отправить</button>
-            <input class="callback__checkbox-input form__checkbox-input" type="checkbox" id="check-modal" name="checkbox" required>
-            <label class="callback__checkbox form__checkbox" for="check-modal">
-              Я согласен на обработку&emsp;персональных данных
-            </label>
           </form>
         </div>
       </div>
     </div>
-
-    <!-- <div class="modal modal--preload modal--fit-content modal--no-scale" data-modal="success">
-      <div class="modal__wrapper">
-        <div class="modal__overlay" data-close-modal></div>
-        <div class="modal__content">
-          <p class="modal__description">Размер этой модалки зависит от ширины контента,<br> отключена анимация-скейл</p>
-          <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>
-            <svg width="15" height="15">
-              <use xlink:href="img/sprite_auto.svg#icon-close"></use>
-            </svg>
-          </button>
-        </div>
-      </div>
-    </div> -->
-
     <script src="js/vendor.min.js"></script>
     <script src="js/main.min.js"></script>
   </body>
