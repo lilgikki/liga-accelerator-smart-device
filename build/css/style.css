@@ -734,6 +734,7 @@ button,
 
 .main-header {
   position: absolute;
+  z-index: 2;
   font-family: "PT Mono", "Courier New", monospace;
   top: 0;
   min-width: 320px;
@@ -922,6 +923,8 @@ button,
 }
 
 .main-banner {
+  position: relative;
+  z-index: 0;
   color: #f2f5f7;
   font-family: "PT Mono", "Courier New", monospace;
   width: 100%;
@@ -930,11 +933,6 @@ button,
   background-size: cover;
   background-image: url("../img/main-bg.webp");
   background-color: #041827;
-}
-@media (-webkit-min-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-  .main-banner {
-    background-image: url("../img/main-bg@2.webp");
-  }
 }
 @media (max-width: 1023px) {
   .main-banner {
@@ -948,6 +946,8 @@ button,
 }
 
 .main-banner__container {
+  position: relative;
+  z-index: 3;
   padding: 305px 0 280px 125px;
 }
 @media (max-width: 1439px) {
@@ -1296,14 +1296,14 @@ button,
 
 .about__container {
   padding: 0 0 122px 250px;
-  background-image: url("../img/about-company.webp");
+  background-image: url("../img/about-company.png");
   background-size: 150px 320px;
   background-repeat: no-repeat;
   background-position: 0 0;
 }
 @media (-webkit-min-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
   .about__container {
-    background-image: url("../img/about-company@2.webp");
+    background-image: url("../img/about-company@2.png");
   }
 }
 @media (max-width: 1439px) {
@@ -1485,6 +1485,8 @@ button,
 }
 
 .catalog__item {
+  position: relative;
+  z-index: 0;
   -webkit-transition: 0.3s ease;
   -o-transition: 0.3s ease;
   transition: 0.3s ease;
@@ -1517,95 +1519,20 @@ button,
   }
 }
 
-.catalog__item--prod {
-  background-image: url("../img/desktop-catalog-bg-1.webp");
-}
-@media (-webkit-min-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-  .catalog__item--prod {
-    background-image: url("../img/desktop-catalog-bg-1@2.webp");
-  }
-}
-@media (max-width: 1023px) {
-  .catalog__item--prod {
-    background-image: url("../img/tablet-catalog-bg-1.webp");
-  }
-}
-@media (max-width: 1023px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 1023px) and (-o-min-device-pixel-ratio: 3/2), (max-width: 1023px) and (min-resolution: 144dpi), (max-width: 1023px) and (min-resolution: 1.5dppx) {
-  .catalog__item--prod {
-    background-image: url("../img/tablet-catalog-bg-1@2.webp");
-  }
-}
-@media (max-width: 767px) {
-  .catalog__item--prod {
-    background-image: url("../img/mobile-catalog-bg-1.webp");
-  }
-}
-@media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 767px) and (-o-min-device-pixel-ratio: 3/2), (max-width: 767px) and (min-resolution: 144dpi), (max-width: 767px) and (min-resolution: 1.5dppx) {
-  .catalog__item--prod {
-    background-image: url("../img/mobile-catalog-bg-1@2.webp");
-  }
-}
-
-.catalog__item--mount {
-  background-image: url("../img/desktop-catalog-bg-2.webp");
-}
-@media (-webkit-min-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-  .catalog__item--mount {
-    background-image: url("../img/desktop-catalog-bg-2@2.webp");
-  }
-}
-@media (max-width: 1023px) {
-  .catalog__item--mount {
-    background-image: url("../img/tablet-catalog-bg-2.webp");
-  }
-}
-@media (max-width: 1023px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 1023px) and (-o-min-device-pixel-ratio: 3/2), (max-width: 1023px) and (min-resolution: 144dpi), (max-width: 1023px) and (min-resolution: 1.5dppx) {
-  .catalog__item--mount {
-    background-image: url("../img/tablet-catalog-bg-2@2.webp");
-  }
-}
-@media (max-width: 767px) {
-  .catalog__item--mount {
-    background-image: url("../img/mobile-catalog-bg-2.webp");
-  }
-}
-@media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 767px) and (-o-min-device-pixel-ratio: 3/2), (max-width: 767px) and (min-resolution: 144dpi), (max-width: 767px) and (min-resolution: 1.5dppx) {
-  .catalog__item--mount {
-    background-image: url("../img/mobile-catalog-bg-2@2.webp");
-  }
-}
-
-.catalog__item--access {
-  background-image: url("../img/desktop-catalog-bg-3.webp");
-}
-@media (-webkit-min-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-  .catalog__item--access {
-    background-image: url("../img/desktop-catalog-bg-3@2.webp");
-  }
-}
-@media (max-width: 1023px) {
-  .catalog__item--access {
-    background-image: url("../img/tablet-catalog-bg-3.webp");
-  }
-}
-@media (max-width: 1023px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 1023px) and (-o-min-device-pixel-ratio: 3/2), (max-width: 1023px) and (min-resolution: 144dpi), (max-width: 1023px) and (min-resolution: 1.5dppx) {
-  .catalog__item--access {
-    background-image: url("../img/tablet-catalog-bg-3@2.webp");
-  }
-}
-@media (max-width: 767px) {
-  .catalog__item--access {
-    background-image: url("../img/mobile-catalog-bg-3.webp");
-  }
-}
-@media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 767px) and (-o-min-device-pixel-ratio: 3/2), (max-width: 767px) and (min-resolution: 144dpi), (max-width: 767px) and (min-resolution: 1.5dppx) {
-  .catalog__item--access {
-    background-image: url("../img/mobile-catalog-bg-3@2.webp");
-  }
+.catalog__bg {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .catalog__link {
   position: relative;
+  z-index: 2;
   display: block;
   width: 100%;
   height: 100%;
@@ -1627,6 +1554,7 @@ button,
 
 .catalog__link::after {
   position: absolute;
+  z-index: 3;
   bottom: 0;
   right: 0;
   content: "";
@@ -1923,16 +1851,8 @@ button,
 }
 
 .feedback__container {
-  background-image: url("../img/paper-airplane.webp");
-  background-size: 510px 285px;
-  background-repeat: no-repeat;
-  background-position: 0 246px;
+  position: relative;
   padding: 165px 0 250px 0;
-}
-@media (-webkit-min-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-  .feedback__container {
-    background-image: url("../img/paper-airplane@2.webp");
-  }
 }
 @media (max-width: 1439px) {
   .feedback__container {
@@ -1950,6 +1870,19 @@ button,
 @media (max-width: 767px) {
   .feedback__container {
     padding: 48px 25px 89px;
+  }
+}
+
+.feedback__bg {
+  position: absolute;
+  width: 510px;
+  height: 285px;
+  top: 246px;
+  left: 0;
+}
+@media (max-width: 1023px) {
+  .feedback__bg {
+    display: none;
   }
 }
 

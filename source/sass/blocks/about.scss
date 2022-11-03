@@ -5,13 +5,13 @@
 
 .about__container {
   padding: 0 0 122px 250px;
-  background-image: url("../img/about-company.webp");
+  background-image: url("../img/about-company.png");
   background-size: 150px 320px;
   background-repeat: no-repeat;
   background-position: 0 0;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    background-image: url("../img/about-company@2.webp");
+    background-image: url("../img/about-company@2.png");
   }
 
   @include vp-1439 {
