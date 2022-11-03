@@ -28,6 +28,7 @@
 
 .main-footer__nav {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: flex-start;
   min-width: 745px;
@@ -39,7 +40,6 @@
   }
 
   @include vp-767 {
-    flex-wrap: wrap;
     width: 100%;
     border-top: 1px solid rgba(248, 253, 255, 0.7);
   }

@@ -734,7 +734,7 @@ button,
 
 .main-header {
   position: absolute;
-  font-family: "PT Mono", "Times New Roman", serif;
+  font-family: "PT Mono", "Courier New", monospace;
   top: 0;
   min-width: 320px;
   width: 100%;
@@ -796,7 +796,7 @@ button,
   transition: 0.3s ease;
   width: 225px;
   margin-bottom: 5px;
-  font-family: "PT Mono", "Times New Roman", serif;
+  font-family: "PT Mono", "Courier New", monospace;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -838,6 +838,9 @@ button,
   opacity: 0.8;
 }
 
+.main-header__text {
+  max-width: 180px;
+}
 @media (max-width: 1023px) {
   .main-header__text {
     display: none;
@@ -920,17 +923,17 @@ button,
 
 .main-banner {
   color: #f2f5f7;
-  font-family: "PT Mono", "Times New Roman", serif;
+  font-family: "PT Mono", "Courier New", monospace;
   width: 100%;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  background-image: url("../img/main-bg.jpg");
+  background-image: url("../img/main-bg.webp");
   background-color: #041827;
 }
 @media (-webkit-min-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
   .main-banner {
-    background-image: url("../img/main-bg@2.jpg");
+    background-image: url("../img/main-bg@2.webp");
   }
 }
 @media (max-width: 1023px) {
@@ -1246,7 +1249,7 @@ button,
   height: -moz-fit-content;
   height: fit-content;
   margin: 0;
-  font-family: "PT Mono", "Times New Roman", serif;
+  font-family: "PT Mono", "Courier New", monospace;
   font-weight: 400;
   font-size: 16px;
   line-height: 22px;
@@ -1293,14 +1296,14 @@ button,
 
 .about__container {
   padding: 0 0 122px 250px;
-  background-image: url("../img/about-company.png");
+  background-image: url("../img/about-company.webp");
   background-size: 150px 320px;
   background-repeat: no-repeat;
   background-position: 0 0;
 }
 @media (-webkit-min-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
   .about__container {
-    background-image: url("../img/about-company@2.png");
+    background-image: url("../img/about-company@2.webp");
   }
 }
 @media (max-width: 1439px) {
@@ -1357,7 +1360,7 @@ button,
   display: block;
   margin: 0;
   padding: 10px 0 12px;
-  font-family: "PT Mono", "Times New Roman", serif;
+  font-family: "PT Mono", "Courier New", monospace;
   font-weight: 400;
   font-size: 16px;
   line-height: 22px;
@@ -1515,89 +1518,89 @@ button,
 }
 
 .catalog__item--prod {
-  background-image: url("../img/desktop-catalog-bg-1.jpg");
+  background-image: url("../img/desktop-catalog-bg-1.webp");
 }
 @media (-webkit-min-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
   .catalog__item--prod {
-    background-image: url("../img/desktop-catalog-bg-1@2.jpg");
+    background-image: url("../img/desktop-catalog-bg-1@2.webp");
   }
 }
 @media (max-width: 1023px) {
   .catalog__item--prod {
-    background-image: url("../img/tablet-catalog-bg-1.jpg");
+    background-image: url("../img/tablet-catalog-bg-1.webp");
   }
 }
 @media (max-width: 1023px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 1023px) and (-o-min-device-pixel-ratio: 3/2), (max-width: 1023px) and (min-resolution: 144dpi), (max-width: 1023px) and (min-resolution: 1.5dppx) {
   .catalog__item--prod {
-    background-image: url("../img/tablet-catalog-bg-1@2.jpg");
+    background-image: url("../img/tablet-catalog-bg-1@2.webp");
   }
 }
 @media (max-width: 767px) {
   .catalog__item--prod {
-    background-image: url("../img/mobile-catalog-bg-1.jpg");
+    background-image: url("../img/mobile-catalog-bg-1.webp");
   }
 }
 @media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 767px) and (-o-min-device-pixel-ratio: 3/2), (max-width: 767px) and (min-resolution: 144dpi), (max-width: 767px) and (min-resolution: 1.5dppx) {
   .catalog__item--prod {
-    background-image: url("../img/mobile-catalog-bg-1@2.jpg");
+    background-image: url("../img/mobile-catalog-bg-1@2.webp");
   }
 }
 
 .catalog__item--mount {
-  background-image: url("../img/desktop-catalog-bg-2.jpg");
+  background-image: url("../img/desktop-catalog-bg-2.webp");
 }
 @media (-webkit-min-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
   .catalog__item--mount {
-    background-image: url("../img/desktop-catalog-bg-2@2.jpg");
+    background-image: url("../img/desktop-catalog-bg-2@2.webp");
   }
 }
 @media (max-width: 1023px) {
   .catalog__item--mount {
-    background-image: url("../img/tablet-catalog-bg-2.jpg");
+    background-image: url("../img/tablet-catalog-bg-2.webp");
   }
 }
 @media (max-width: 1023px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 1023px) and (-o-min-device-pixel-ratio: 3/2), (max-width: 1023px) and (min-resolution: 144dpi), (max-width: 1023px) and (min-resolution: 1.5dppx) {
   .catalog__item--mount {
-    background-image: url("../img/tablet-catalog-bg-2@2.jpg");
+    background-image: url("../img/tablet-catalog-bg-2@2.webp");
   }
 }
 @media (max-width: 767px) {
   .catalog__item--mount {
-    background-image: url("../img/mobile-catalog-bg-2.jpg");
+    background-image: url("../img/mobile-catalog-bg-2.webp");
   }
 }
 @media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 767px) and (-o-min-device-pixel-ratio: 3/2), (max-width: 767px) and (min-resolution: 144dpi), (max-width: 767px) and (min-resolution: 1.5dppx) {
   .catalog__item--mount {
-    background-image: url("../img/mobile-catalog-bg-2@2.jpg");
+    background-image: url("../img/mobile-catalog-bg-2@2.webp");
   }
 }
 
 .catalog__item--access {
-  background-image: url("../img/desktop-catalog-bg-3.jpg");
+  background-image: url("../img/desktop-catalog-bg-3.webp");
 }
 @media (-webkit-min-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
   .catalog__item--access {
-    background-image: url("../img/desktop-catalog-bg-3@2.jpg");
+    background-image: url("../img/desktop-catalog-bg-3@2.webp");
   }
 }
 @media (max-width: 1023px) {
   .catalog__item--access {
-    background-image: url("../img/tablet-catalog-bg-3.jpg");
+    background-image: url("../img/tablet-catalog-bg-3.webp");
   }
 }
 @media (max-width: 1023px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 1023px) and (-o-min-device-pixel-ratio: 3/2), (max-width: 1023px) and (min-resolution: 144dpi), (max-width: 1023px) and (min-resolution: 1.5dppx) {
   .catalog__item--access {
-    background-image: url("../img/tablet-catalog-bg-3@2.jpg");
+    background-image: url("../img/tablet-catalog-bg-3@2.webp");
   }
 }
 @media (max-width: 767px) {
   .catalog__item--access {
-    background-image: url("../img/mobile-catalog-bg-3.jpg");
+    background-image: url("../img/mobile-catalog-bg-3.webp");
   }
 }
 @media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 767px) and (-o-min-device-pixel-ratio: 3/2), (max-width: 767px) and (min-resolution: 144dpi), (max-width: 767px) and (min-resolution: 1.5dppx) {
   .catalog__item--access {
-    background-image: url("../img/mobile-catalog-bg-3@2.jpg");
+    background-image: url("../img/mobile-catalog-bg-3@2.webp");
   }
 }
 
@@ -1677,7 +1680,7 @@ button,
 
 .form form {
   color: #f2f5f7;
-  font-family: "PT Mono", "Times New Roman", serif;
+  font-family: "PT Mono", "Courier New", monospace;
 }
 
 .form__title {
@@ -1736,7 +1739,7 @@ button,
 .form__inputs-wrapper input::-webkit-input-placeholder,
 .form__input--quest textarea::-webkit-input-placeholder {
   color: #ffffff;
-  font-family: "PT Mono", "Times New Roman", serif;
+  font-family: "PT Mono", "Courier New", monospace;
   font-weight: 400;
   font-size: 16px;
   line-height: 22px;
@@ -1745,7 +1748,7 @@ button,
 .form__inputs-wrapper input::-moz-placeholder,
 .form__input--quest textarea::-moz-placeholder {
   color: #ffffff;
-  font-family: "PT Mono", "Times New Roman", serif;
+  font-family: "PT Mono", "Courier New", monospace;
   font-weight: 400;
   font-size: 16px;
   line-height: 22px;
@@ -1754,7 +1757,7 @@ button,
 .form__inputs-wrapper input:-ms-input-placeholder,
 .form__input--quest textarea:-ms-input-placeholder {
   color: #ffffff;
-  font-family: "PT Mono", "Times New Roman", serif;
+  font-family: "PT Mono", "Courier New", monospace;
   font-weight: 400;
   font-size: 16px;
   line-height: 22px;
@@ -1763,7 +1766,7 @@ button,
 .form__inputs-wrapper input::-ms-input-placeholder,
 .form__input--quest textarea::-ms-input-placeholder {
   color: #ffffff;
-  font-family: "PT Mono", "Times New Roman", serif;
+  font-family: "PT Mono", "Courier New", monospace;
   font-weight: 400;
   font-size: 16px;
   line-height: 22px;
@@ -1772,7 +1775,7 @@ button,
 .form__inputs-wrapper input::placeholder,
 .form__input--quest textarea::placeholder {
   color: #ffffff;
-  font-family: "PT Mono", "Times New Roman", serif;
+  font-family: "PT Mono", "Courier New", monospace;
   font-weight: 400;
   font-size: 16px;
   line-height: 22px;
@@ -1848,7 +1851,7 @@ button,
   width: 45.5%;
   margin-top: 15px;
   padding-left: 26px;
-  font-family: "PT Mono", "Times New Roman", serif;
+  font-family: "PT Mono", "Courier New", monospace;
   font-weight: 400;
   font-size: 14px;
   line-height: 15px;
@@ -1906,7 +1909,7 @@ button,
 
 .feedback {
   width: 100%;
-  font-family: "PT Mono", "Times New Roman", serif;
+  font-family: "PT Mono", "Courier New", monospace;
   background-color: #00b2ff;
   background-image: url("../img/svg/bg-form.svg");
   background-repeat: no-repeat;
@@ -1920,7 +1923,7 @@ button,
 }
 
 .feedback__container {
-  background-image: url("../img/paper-airplane.png");
+  background-image: url("../img/paper-airplane.webp");
   background-size: 510px 285px;
   background-repeat: no-repeat;
   background-position: 0 246px;
@@ -1928,7 +1931,7 @@ button,
 }
 @media (-webkit-min-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
   .feedback__container {
-    background-image: url("../img/paper-airplane@2.png");
+    background-image: url("../img/paper-airplane@2.webp");
   }
 }
 @media (max-width: 1439px) {
@@ -2133,6 +2136,8 @@ button,
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -2150,8 +2155,6 @@ button,
 }
 @media (max-width: 767px) {
   .main-footer__nav {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
     width: 100%;
     border-top: 1px solid rgba(248, 253, 255, 0.7);
   }
@@ -2210,7 +2213,7 @@ button,
 }
 
 .main-footer__text {
-  font-family: "PT Mono", "Times New Roman", serif;
+  font-family: "PT Mono", "Courier New", monospace;
   font-weight: 400;
   font-size: 16px;
   line-height: 22px;
@@ -2385,9 +2388,12 @@ button,
 
 .location {
   position: relative;
-  max-width: 345px;
-  width: auto;
-  min-width: 275px;
+  width: 41%;
+}
+@media (max-width: 1439px) {
+  .location {
+    width: 36%;
+  }
 }
 @media (max-width: 1023px) {
   .location {

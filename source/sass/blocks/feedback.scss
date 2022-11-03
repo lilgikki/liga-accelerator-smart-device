@@ -13,14 +13,14 @@
 }
 
 .feedback__container {
-  background-image: url("../img/paper-airplane.png");
+  background-image: url("../img/paper-airplane.webp");
   background-size: 510px 285px;
   background-repeat: no-repeat;
   background-position: 0 246px;
   padding: 165px 0 250px 0;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    background-image: url("../img/paper-airplane@2.png");
+    background-image: url("../img/paper-airplane@2.webp");
   }
 
   @include vp-1439 {
