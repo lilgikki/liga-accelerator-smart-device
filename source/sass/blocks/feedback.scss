@@ -1,5 +1,6 @@
 .feedback {
   width: 100%;
+  overflow-x: hidden;
   font-family: "PT Mono", "Courier New", monospace;
   background-color: $color-deep-sky-blue;
   background-image: url("../img/svg/bg-form.svg");
@@ -45,9 +46,6 @@
 }
 
 .feedback form {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
   padding-right: 10px;
   width: 48.7%;
   margin-left: auto;

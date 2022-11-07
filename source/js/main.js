@@ -1,8 +1,11 @@
 import {iosVhFix} from './utils/ios-vh-fix';
-import {initModals} from './modules/modals/init-modals';
+// import {initModals} from './modules/modals/init-modals';
 import {activateSitePages, activateLocation} from './acardion.js';
 import {clickAboutButton, changeParsTextContent, setParsTextContent} from './show-par.js';
 import {submitFormCallback, submitFormFeedback} from './form.js';
+import {scrollToForm} from './scroll-to-form.js';
+import {getPopup} from './popup.js';
+import {getMask} from './mask.js';
 
 // ---------------------------------
 
@@ -26,11 +29,17 @@ window.addEventListener('DOMContentLoaded', () => {
   submitFormCallback();
   submitFormFeedback();
 
+  scrollToForm();
+
+  getPopup();
+
+  getMask();
+
   // все скрипты должны быть в обработчике 'DOMContentLoaded', но не все в 'load'
   // в load следует добавить скрипты, не участвующие в работе первого экрана
-  window.addEventListener('load', () => {
-    initModals();
-  });
+  // window.addEventListener('load', () => {
+  //   initModals();
+  // });
 });
 
 // ---------------------------------

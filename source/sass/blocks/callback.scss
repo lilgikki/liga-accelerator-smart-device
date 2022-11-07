@@ -3,6 +3,7 @@
   width: 500px;
   padding-top: 36px;
   padding-bottom: 42px;
+  border-radius: 3px;
 }
 
 .callback__wrapper {
@@ -38,15 +39,11 @@
   margin-bottom: 20px;
 }
 
-.callback__input--quest {
-  margin-bottom: 17px;
-}
-
 .callback__inputs-wrapper input {
   padding-bottom: 17px;
 }
 
-.callback__input--quest input {
+.callback__input--quest textarea {
   height: 155px;
   padding-top: 22px;
   padding-bottom: 22px;
@@ -56,12 +53,13 @@
   width: 100%;
   margin-left: 0;
   margin-top: 25px;
-  margin-bottom: 22px;
+  margin-bottom: 5px;
 }
 
 .callback__checkbox-container {
   width: 100%;
   margin-left: 7px;
+  margin-bottom: 4px;
 }
 
 .callback__checkbox-container input {

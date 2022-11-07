@@ -1,6 +1,9 @@
 .form form {
   color: $color-alice-blue;
   font-family: "PT Mono", "Courier New", monospace;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .form__title {
@@ -91,6 +94,7 @@
 }
 
 .form__submit {
+  order: 4;
   display: block;
   border: none;
   color: $color-default-white;
@@ -122,6 +126,7 @@
 }
 
 .form__checkbox-container {
+  order: 5;
   position: relative;
   width: 45.5%;
   margin-top: 15px;
@@ -152,6 +157,14 @@
   opacity: 0;
   left: 0;
   top: 5px;
+}
+
+input:focus-visible ~ label::before {
+  outline: -webkit-focus-ring-color auto 1px;
+}
+
+.form__checkbox-container label {
+  cursor: pointer;
 }
 
 .form__checkbox-container label::before {

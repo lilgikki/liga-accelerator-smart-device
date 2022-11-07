@@ -586,6 +586,10 @@ button,
 }
 
 .btn {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -734,6 +738,7 @@ button,
 
 .main-header {
   position: absolute;
+  overflow-x: hidden;
   z-index: 2;
   font-family: "PT Mono", "Courier New", monospace;
   top: 0;
@@ -795,7 +800,9 @@ button,
   -webkit-transition: 0.3s ease;
   -o-transition: 0.3s ease;
   transition: 0.3s ease;
-  width: 225px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
   margin-bottom: 5px;
   font-family: "PT Mono", "Courier New", monospace;
   font-style: normal;
@@ -924,6 +931,7 @@ button,
 
 .main-banner {
   position: relative;
+  overflow-x: hidden;
   z-index: 0;
   color: #f2f5f7;
   font-family: "PT Mono", "Courier New", monospace;
@@ -1068,6 +1076,7 @@ button,
 
 .benefits {
   width: 100%;
+  overflow-x: hidden;
 }
 
 .benefits__container {
@@ -1292,6 +1301,7 @@ button,
 .about {
   width: 100%;
   color: #041827;
+  overflow-x: hidden;
 }
 
 .about__container {
@@ -1308,9 +1318,7 @@ button,
 }
 @media (max-width: 1439px) {
   .about__container {
-    padding-top: 0;
-    padding-bottom: 122px;
-    padding-left: 282px;
+    padding: 0 32px 122px 282px;
     background-position: 32px 0;
   }
 }
@@ -1419,14 +1427,15 @@ button,
   width: 100%;
   background-color: #041827;
   color: #ffffff;
+  overflow-x: hidden;
 }
 
 .catalog__container {
-  padding: 66px 0 140px;
+  padding: 66px 0 100px;
 }
 @media (max-width: 1439px) {
   .catalog__container {
-    padding: 66px 32px 140px;
+    padding: 66px 32px 100px;
   }
 }
 @media (max-width: 1023px) {
@@ -1479,9 +1488,6 @@ button,
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
 }
 
 .catalog__item {
@@ -1496,12 +1502,15 @@ button,
   background-color: #00b2ff;
   background-position: center;
   background-size: cover;
+  margin-right: 85px;
+  margin-bottom: 40px;
 }
 @media (max-width: 1023px) {
   .catalog__item {
     width: 100%;
     height: 250px;
     margin-bottom: 30px;
+    margin-right: 0;
   }
 }
 @media (hover: hover) {
@@ -1511,6 +1520,10 @@ button,
 }
 .catalog__item.focus-visible:focus {
   opacity: 0.8;
+}
+
+.catalog__item:nth-of-type(3n) {
+  margin-right: 0;
 }
 
 @media (max-width: 1023px) {
@@ -1609,6 +1622,14 @@ button,
 .form form {
   color: #f2f5f7;
   font-family: "PT Mono", "Courier New", monospace;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .form__title {
@@ -1742,6 +1763,9 @@ button,
 }
 
 .form__submit {
+  -webkit-box-ordinal-group: 5;
+      -ms-flex-order: 4;
+          order: 4;
   display: block;
   border: none;
   color: #ffffff;
@@ -1775,6 +1799,9 @@ button,
 }
 
 .form__checkbox-container {
+  -webkit-box-ordinal-group: 6;
+      -ms-flex-order: 5;
+          order: 5;
   position: relative;
   width: 45.5%;
   margin-top: 15px;
@@ -1809,6 +1836,14 @@ button,
   top: 5px;
 }
 
+input:focus-visible ~ label::before {
+  outline: -webkit-focus-ring-color auto 1px;
+}
+
+.form__checkbox-container label {
+  cursor: pointer;
+}
+
 .form__checkbox-container label::before {
   display: block;
   position: absolute;
@@ -1837,6 +1872,7 @@ button,
 
 .feedback {
   width: 100%;
+  overflow-x: hidden;
   font-family: "PT Mono", "Courier New", monospace;
   background-color: #00b2ff;
   background-image: url("../img/svg/bg-form.svg");
@@ -1887,14 +1923,6 @@ button,
 }
 
 .feedback form {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   padding-right: 10px;
   width: 48.7%;
   margin-left: auto;
@@ -1946,6 +1974,7 @@ button,
   width: 500px;
   padding-top: 36px;
   padding-bottom: 42px;
+  border-radius: 3px;
 }
 
 .callback__wrapper {
@@ -1986,15 +2015,11 @@ button,
   margin-bottom: 20px;
 }
 
-.callback__input--quest {
-  margin-bottom: 17px;
-}
-
 .callback__inputs-wrapper input {
   padding-bottom: 17px;
 }
 
-.callback__input--quest input {
+.callback__input--quest textarea {
   height: 155px;
   padding-top: 22px;
   padding-bottom: 22px;
@@ -2004,12 +2029,13 @@ button,
   width: 100%;
   margin-left: 0;
   margin-top: 25px;
-  margin-bottom: 22px;
+  margin-bottom: 5px;
 }
 
 .callback__checkbox-container {
   width: 100%;
   margin-left: 7px;
+  margin-bottom: 4px;
 }
 
 .callback__checkbox-container input {
@@ -2030,6 +2056,7 @@ button,
 .main-footer {
   background-color: #041827;
   min-width: 320px;
+  overflow-x: hidden;
 }
 
 .main-footer__container {
@@ -2164,13 +2191,14 @@ button,
 }
 @media (max-width: 767px) {
   .main-footer__button {
+    height: 60px;
+    width: 100%;
     position: absolute;
-    top: 20px;
-    right: 26px;
+    top: 0;
+    right: 0;
     display: block;
-    width: 15px;
-    height: 15px;
-    background-position: center;
+    background-position: right 26px top 20px;
+    background-size: 15px 15px;
     background-repeat: no-repeat;
     border: none;
     padding: 0;
@@ -2259,6 +2287,11 @@ button,
   }
 }
 
+.site-pages__item {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
 @media (max-width: 767px) {
   .site-pages__item {
     display: -webkit-box;
@@ -2284,12 +2317,9 @@ button,
 .site-pages__list {
   display: -ms-grid;
   display: grid;
-  -ms-grid-rows: auto 5px auto 5px auto 5px auto;
-  -ms-grid-columns: 220px 30px 220px;
-      grid-template: repeat(4, auto)/repeat(2, 220px);
-  grid-auto-flow: column;
+  -ms-grid-columns: (220px)[2];
+  grid-template-columns: repeat(2, 220px);
   grid-column-gap: 30px;
-  grid-row-gap: 5px;
 }
 @media (max-width: 1023px) {
   .site-pages__list {
@@ -2297,10 +2327,28 @@ button,
     -ms-grid-columns: 220px;
         grid-template: auto/220px;
     grid-auto-flow: row;
+    grid-row-gap: 5px;
   }
 }
 @media (max-width: 767px) {
   .site-pages__list {
+    grid-row-gap: 10px;
+  }
+}
+
+.site-pages__column {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 220px;
+  grid-template-columns: 220px;
+  grid-auto-flow: row;
+  grid-row-gap: 5px;
+}
+@media (max-width: 767px) {
+  .site-pages__column {
     grid-row-gap: 10px;
   }
 }

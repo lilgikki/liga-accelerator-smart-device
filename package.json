@@ -49,6 +49,7 @@
     "gulp-sass": "5.1.0",
     "gulp-svgstore": "9.0.0",
     "gulp-webp": "4.0.1",
+    "imask": "^6.4.3",
     "postcss": "8.4.14",
     "sass": "1.53.0",
     "stylelint": "13.13.1",

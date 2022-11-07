@@ -1,6 +1,7 @@
 .about {
   width: 100%;
   color: $color-black-pearl;
+  overflow-x: hidden;
 }
 
 .about__container {
@@ -15,9 +16,7 @@
   }
 
   @include vp-1439 {
-    padding-top: 0;
-    padding-bottom: 122px;
-    padding-left: 282px;
+    padding: 0 32px 122px 282px;
     background-position: 32px 0;
   }
 

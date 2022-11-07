@@ -1,5 +1,6 @@
 .main-header {
   position: absolute;
+  overflow-x: hidden;
   z-index: 2;
   font-family: "PT Mono", "Courier New", monospace;
   top: 0;
@@ -42,7 +43,7 @@
 
 .main-header__link {
   transition: $trans-default;
-  width: 225px;
+  width: fit-content;
   margin-bottom: 5px;
   font-family: "PT Mono", "Courier New", monospace;
   font-style: normal;
