@@ -18,7 +18,7 @@
         <nav class="main-header__nav container">
           <ul class="main-header__list list">
             <li class="main-header__item">
-              <a href="index.html" class="logotype">
+              <a class="logotype">
                 <picture>
                   <source media="(min-width: 768px)" srcset="img/svg/desktop-icon-logo.svg">
                   <img class="logotype__img" src="img/svg/mobile-icon-logo.svg" alt="Логотип Smart Device">
@@ -211,7 +211,7 @@
                   <input type="text" id="name" placeholder="Имя" name="name" required>
                 </label>
                 <label for="tel">
-                  <input type="tel" id="tel" placeholder="Телефон" name="telephone" required>
+                  <input type="tel" id="tel" placeholder="Телефон" name="telephone" pattern="\+7\s?[\(][0-9]{3}[\)]{0,1}\s?\d{3}[-]{0,1}\d{2}[-]{0,1}\d{2}" required>
                 </label>
                 <div class="form__input--quest">
                   <label for="quest">
@@ -366,7 +366,7 @@
                 <input type="text" id="name-modal" placeholder="Имя" name="name" required>
               </label>
               <label for="tel-modal">
-                <input type="tel" id="tel-modal" placeholder="Телефон" name="telephone" required>
+                <input type="tel" id="tel-modal" placeholder="Телефон" name="telephone" pattern="\+7\s?[\(][0-9]{3}[\)]{0,1}\s?\d{3}[-]{0,1}\d{2}[-]{0,1}\d{2}" required>
               </label>
               <div class="form__input--quest callback__input--quest">
                 <label for="quest-modal">

@@ -4,7 +4,10 @@ const bannerButton = document.getElementById('banner-button');
 const scrollToForm = () => {
   if (formFeedback && bannerButton) {
     bannerButton.addEventListener('click', () => {
-      formFeedback.scrollIntoView();
+      formFeedback.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start',
+      });
     });
   }
 };
