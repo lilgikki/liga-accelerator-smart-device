@@ -1,3 +1,5 @@
+const callbackPopup = document.getElementById('callback');
+
 const formCallback = document.getElementById('callback-form');
 const formFeedback = document.getElementById('feedback-form');
 
@@ -21,6 +23,7 @@ const submitFormCallback = () => {
         evt.preventDefault();
         submitForm(nameCallback.value, phoneCallback.value);
         formCallback.reset();
+        callbackPopup.classList.remove('is-active');
       }
     }
     );
